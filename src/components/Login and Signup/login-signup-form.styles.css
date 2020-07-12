@@ -17,3 +17,15 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.login-form .google-signin-div p{
+    color: #808080;
+}
+
+.login-form .google-signin-div{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

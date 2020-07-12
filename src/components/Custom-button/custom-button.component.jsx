@@ -8,6 +8,7 @@ const CustomButton = ({ children, inverted, loading, onClick, isGoogleSignIn}) =
             className={`${inverted ? 'inverted' : 'normal'} 
             ${isGoogleSignIn ? 'google-sign-in' : 'normal'} 
             custom-button `}
+            onClick={onClick}
         >
             {children}
         </button>
