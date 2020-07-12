@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import FormInput from "../Form-input/form-input.component";
+import CustomButton from "../Custom-button/custom-button.component";
 import "./login-form.styles.css";
 
 const LoginComponent = () => {
@@ -12,7 +13,7 @@ const LoginComponent = () => {
         // try {
         //     await auth.signInWithEmailAndPassword(email, password);
         //     console.log("Logged In Successfully!!");
-        //     setEmail("");
+    //     setEmail("");
         //     setPassword("");
         //     setLoading(false);
         // } catch (error) {
@@ -23,6 +24,8 @@ const LoginComponent = () => {
 
     return (
         <div className="login-form">
+            <h2>Already have an account?</h2>
+            <p style={{ fontSize: "1rem", color:"#808080"}}>Sign in using email and password</p>
             <form onSubmit={handleSubmit}>
                 <FormInput
                     name="email"
@@ -44,7 +47,10 @@ const LoginComponent = () => {
                     label="Password"
                     required
                 />
-                
+                <div className="buttons-group">
+                    <CustomButton type="submit">Sign In</CustomButton>
+                    <CustomButton type="button" isGoogleSignIn>Sign In With Google</CustomButton>
+                </div>
             </form>
         </div>
     )

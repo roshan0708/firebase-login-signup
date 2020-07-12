@@ -1,26 +1,33 @@
-custom-button{
+.custom-button{
     border:none;
     white-space: nowrap;
-    width:max-content;
+    width:fit-content;
     padding-left:30px;
     padding-right:30px;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 550;
     height: fit-content;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     letter-spacing: 0.5px;
-    line-height: 50px;
+    line-height: 38px;
     cursor: pointer;
+    font-family: 'PT Sans', sans-serif;
     outline: none !important;
 }
 
 .normal{
     color: #fff;
-    background-color: #007bff;
-    border: 2px solid #007bff;
+    background-color: #000;
+    border: 2px solid #000000;
+}
+
+.normal:hover{
+    color: #000;
+    background-color: #ffffff;
+    border: 2px solid #000000;
 }
 
 .inverted{
@@ -31,4 +38,16 @@ custom-button{
 
 .inverted:hover{
     color: #065dbb;
+}
+
+.google-sign-in{
+    background-color: #4285f4;
+    color:white;
+    border:2px solid #4285f4;
+}
+
+.google-sign-in:hover{
+    background-color: #357ae8;
+    color:white;
+    border:2px solid #357ae8;
 }

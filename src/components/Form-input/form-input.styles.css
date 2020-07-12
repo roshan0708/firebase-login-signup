@@ -1,24 +1,26 @@
 .form-input{
     display: block;
-    width: 80%;
+    width: 95%;
     color: #000;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #a9b4c2;
+    border: none;
+    border-bottom: 1px solid #a9b4c2;
     transition: border-color .3s ease-in-out;
-    border-radius: 6px;
     padding: 7px 11px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 450;
     margin-bottom: 10px;
     line-height: 1.42857143;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .form-input:hover{
-    border-color: #125DB9;
+    border-color: #000;
 }
 
 .form-input-label{
+    color:#808080;
     font-weight: 550;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
